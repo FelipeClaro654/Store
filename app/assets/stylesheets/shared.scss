@@ -24,3 +24,40 @@
     margin-left: -512px;   /* 50% */
   }
 }
+
+.price-container{
+  background: red;
+  color: white;
+  margin-top: -100px;
+  width: 100px;
+  text-align: center;
+  h2{
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .price-container{
+    margin-top: -70px;
+  }
+}
+
+@media screen and (max-width: 640px) { /* Specific to this particular image */
+  .price-container{
+    margin-top: -44px;
+    width: 60px;
+    h2{
+      font-size: 12px;
+    }
+  }
+}
+
+.list-all-container{
+  background: #0009;
+  color: white;
+}
+
+[class^="flaticon-music"]:before, [class*="flaticon-music"]:before,
+[class^="flaticon-music"]:after, [class*="flaticon-music"]:after {
+  font-size: 16vw;
+}

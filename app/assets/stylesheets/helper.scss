@@ -1,0 +1,23 @@
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.zoom-in{
+  transition: all 0.2s;
+  max-width: 100%;
+  &:hover{
+    transform: scale(1.07);
+  }
+}
+
+@for $i from 1 through 5{
+  .margin-top-#{$i}{
+    margin-top: #{$i * 5}px;
+  }
+}
+
+@for $i from 1 through 5{
+  .neg-margin-top-#{$i}{
+    margin-top: -#{$i * 5}px;
+  }
+}
