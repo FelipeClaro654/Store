@@ -2,6 +2,7 @@
   position: relative;
 }
 
+//image background config
 .background{
   /* Set rules to fill background */
   min-height: 100%;
@@ -17,11 +18,13 @@
   left: 0;
   filter: blur(8px) grayscale(0.8);
 }
+//image background config END
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
+//price-container config
+@media screen and (max-width: 1024px) {
   .background {
     left: 50%;
-    margin-left: -512px;   /* 50% */
+    margin-left: -512px;
   }
 }
 
@@ -51,13 +54,31 @@
     }
   }
 }
+//price-container config END
+
+@media screen and (max-width: 760px) {
+  .list-all-container{
+    display: none;
+  }
+}
 
 .list-all-container{
   background: #0009;
   color: white;
 }
 
+//flaticon-music config
+
 [class^="flaticon-music"]:before, [class*="flaticon-music"]:before,
 [class^="flaticon-music"]:after, [class*="flaticon-music"]:after {
-  font-size: 16vw;
+  font-size: 13vw;
 }
+
+@media screen and (max-width: 1556px) {
+  [class^="flaticon-music"]:before, [class*="flaticon-music"]:before,
+  [class^="flaticon-music"]:after, [class*="flaticon-music"]:after {
+    font-size: 16vw;
+  }
+}
+
+//flaticon-music config END
